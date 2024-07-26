@@ -29,22 +29,22 @@ webpages = [
         'name': 'Subject Details',
         'url': 'https://webkiosk.thapar.edu/StudentFiles/Academic/Studregdetails.jsp'
     },
-    # {
-    #     'name': 'Exam Grades',
-    #     'url': 'https://webkiosk.thapar.edu/StudentFiles/Exam/StudentEventGradesView.jsp?x=&exam='+sem+'&Subject=ALL'
-    # },
+    {
+        'name': 'Exam Grades',
+        'url': 'https://webkiosk.thapar.edu/StudentFiles/Exam/StudentEventGradesView.jsp?x=&exam='+sem+'&Subject=ALL'
+    },
     {
         'name': 'CGPA Report',
         'url': 'https://webkiosk.thapar.edu/StudentFiles/Exam/StudCGPAReport.jsp'
     },
-    # {
-    #     'name': 'Seating Plan',
-    #     'url': 'https://webkiosk.thapar.edu/StudentFiles/Exam/StudViewSeatPlan.jsp'
-    # },
-    # {
-    #     'name': 'Datesheet',
-    #     'url': 'https://webkiosk.thapar.edu/StudentFiles/Exam/StudViewDateSheet.jsp'
-    # },
+    {
+        'name': 'Seating Plan',
+        'url': 'https://webkiosk.thapar.edu/StudentFiles/Exam/StudViewSeatPlan.jsp'
+    },
+    {
+        'name': 'Datesheet',
+        'url': 'https://webkiosk.thapar.edu/StudentFiles/Exam/StudViewDateSheet.jsp'
+    },
     {
         'name': 'Electives',
         'url': 'https://webkiosk.thapar.edu/StudentFiles/Academic/PRStudentView.jsp'

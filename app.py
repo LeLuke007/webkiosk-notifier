@@ -12,15 +12,15 @@ app = Flask(__name__)
 
 # Configuration
 LOGIN_URL = 'https://webkiosk.thapar.edu/CommonFiles/UserAction.jsp'
-EMAIL_ADDRESS = 'knightdarkhero@gmail.com'
-TO_ADDRESS = 'adityasaini2004@gmail.com'
-EMAIL_PASSWORD = 'dvid btvn iqxn btag'
+EMAIL_ADDRESS = 'from_mail@gmail.com'
+TO_ADDRESS = 'to_mail@gmail.com'
+EMAIL_PASSWORD = 'from_mail_password'
 
 sem = '2324EVESEM' #2425ODDSEM
 payload = {
     'UserType': 'S',
-    'MemberCode': "102206286",
-    'Password': "adian1811",
+    'MemberCode': "Roll Number", # Add Your Roll Number
+    'Password': "Password",      # Add Password
     'BTNSubmit': 'Submit'
 }
 

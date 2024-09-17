@@ -1,24 +1,60 @@
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Fhello-world&demo-title=Python%20Hello%20World&demo-description=Use%20Python%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fpython-hello-world.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994600/random/python.png)
 
-# Python Hello World
+# Webkiosk Notifier
 
-This example shows how to use Python on Vercel with Serverless Functions using the [Python Runtime](https://vercel.com/docs/concepts/functions/serverless-functions/runtimes/python).
+Webkiosk Notifier monitors updates on Thapar University's webkiosk portal and sends email notifications when changes are detected. The tool scrapes content from pages like exam grades, subject details, seating plans, and more, compares it with previous data, and sends alerts for updates.
 
-## Demo
+## Setup Instructions
 
-https://python-hello-world.vercel.app/
+### Prerequisites
 
-## Running Locally
+- Python 3.9 or higher
+- Docker
 
-```bash
-npm i -g vercel
-vercel dev
-```
+### Running Locally
 
-Your Python API is now available at `http://localhost:3000/api`.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/webkiosk-notifier.git
+   cd webkiosk-notifier
+   ```
 
-## One-Click Deploy
+2. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=vercel-examples):
+3. Configure email settings in `app.py`:
+   - Replace `EMAIL_ADDRESS`, `TO_ADDRESS`, and `EMAIL_PASSWORD` with your details.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fexamples%2Ftree%2Fmain%2Fpython%2Fhello-world&demo-title=Python%20Hello%20World&demo-description=Use%20Python%20on%20Vercel%20with%20Serverless%20Functions%20using%20the%20Python%20Runtime.&demo-url=https%3A%2F%2Fpython-hello-world.vercel.app%2F&demo-image=https://assets.vercel.com/image/upload/v1669994600/random/python.png)
+4. Run the Flask app:
+   ```bash
+   python app.py
+   ```
+
+### Running with Docker
+
+1. Build the Docker image:
+   ```bash
+   docker build -t webkiosk-notifier .
+   ```
+
+2. Run the Docker container:
+   ```bash
+   docker run -d -p 5000:5000 webkiosk-notifier
+   ```
+
+## Usage
+
+The application checks for updates on the following webkiosk pages:
+- Subject Details
+- Exam Grades
+- CGPA Report
+- Seating Plan
+- Datesheet
+- Electives
+
+Email notifications are triggered when updates are detected.
+
+## License
+
+This project is licensed under the MIT License.

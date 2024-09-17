@@ -14,9 +14,4 @@ COPY . .
 
 EXPOSE 5000
 
-# EDIT THESE
-ENV EMAIL_ADDRESS='from_mail@email.com'
-ENV TO_ADDRESS='to_mail@email.com'
-ENV EMAIL_PASSWORD='from_mail_password'
-
 CMD ["flask", "run"]

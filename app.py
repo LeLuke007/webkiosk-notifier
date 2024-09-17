@@ -15,12 +15,14 @@ LOGIN_URL = 'https://webkiosk.thapar.edu/CommonFiles/UserAction.jsp'
 EMAIL_ADDRESS = 'from_mail@gmail.com'
 TO_ADDRESS = 'to_mail@gmail.com'
 EMAIL_PASSWORD = 'from_mail_password'
-
+ROLL_NUMBER = ''
+PASSWORD = ''
 sem = '2324EVESEM' #2425ODDSEM
+
 payload = {
     'UserType': 'S',
-    'MemberCode': "Roll Number", # Add Your Roll Number
-    'Password': "Password",      # Add Password
+    'MemberCode': ROLL_NUMBER,
+    'Password': PASSWORD, 
     'BTNSubmit': 'Submit'
 }
 

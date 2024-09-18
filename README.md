@@ -23,8 +23,10 @@ Webkiosk Notifier monitors updates on Thapar University's webkiosk portal and se
    pip install -r requirements.txt
    ```
 
-3. Configure email settings in `app.py`:
-   - Replace `EMAIL_ADDRESS`, `TO_ADDRESS`, and `EMAIL_PASSWORD` with your details.
+3. Configure email and login variables in `app.py`:
+   - Change `EMAIL_ADDRESS`, `TO_ADDRESS`, `EMAIL_PASSWORD` with your email settings
+   - Change `ROLL_NUMBER` and `PASSWORD` with your login details
+   - Edit the `sem` varible with the latest ongoing semester
 
 4. Run the Flask app:
    ```bash
